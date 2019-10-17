@@ -18,7 +18,8 @@ count(st_drop_geometry(roads), kind, sort = TRUE)
   
 ggplot() +
  geom_sf(data = water, fill = "lightblue", colour = NA) +
-  geom_sf(data = filter(roads, kind == "major_road"))  +
+  geom_sf(data = filter(roads, kind %in% c("major_road", "minor_road")),
+          aes(colour = kind))  +
   theme_void() + 
   theme(panel.grid.major = element_line(size = 0))
 
