@@ -6,4 +6,4 @@ hopefully discover that its already been implemented
 
 demo nextzen vector tile plotted in ggplot
 
-![](metro_melb.png)
+![](https://github.com/adam-gruer/map_adventures/raw/master/metro_melb.png)
